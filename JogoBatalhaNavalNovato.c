@@ -24,6 +24,7 @@ int main(){
     int coordenadaPraCimaX = 1;
     int coordenadaPraCimaY = 5;
 
+    //verificação de sobreposição de navios
     if(tabuleiro[(coordenadaPraCimaY + 0 - 1)][coordenadaPraCimaX - 1]  == 3 || tabuleiro[(coordenadaPraCimaY + 1 - 1)][coordenadaPraCimaX - 1]  == 3 || tabuleiro[(coordenadaPraCimaY + 2 - 1)][coordenadaPraCimaX - 1]  == 3){
         printf("O navio 1 não pode ser colocado, pois ja existe um navio no local!\n");
     }else{
@@ -38,6 +39,7 @@ int main(){
     int coordenadaProLadoX = 5;
     int coordenadaProLadoY = 3;
 
+    //verificação de sobreposição de navios
     if(tabuleiro[coordenadaProLadoY - 1][(coordenadaProLadoX + 0 - 1)] == 3 || tabuleiro[coordenadaProLadoY - 1][(coordenadaProLadoX + 1 - 1)] == 3 || tabuleiro[coordenadaProLadoY - 1][(coordenadaProLadoX + 2 - 1)] == 3){
         printf("O navio 2 não pode ser colocado, pois ja existe um navio no local!\n");
     }else{
