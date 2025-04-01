@@ -46,11 +46,6 @@ int main(){
         }
     }
 
-    
-
-    //tabuleiro[2][4] = navio2[0];
-    //tabuleiro[2][5] = navio2[1];
-    //tabuleiro[2][6] = navio2[2];
 
     //Exibindo o tabuleiro
     printf("   A B C D E F G H I J\n");
