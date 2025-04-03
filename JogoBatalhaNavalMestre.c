@@ -168,9 +168,7 @@ int main(){
     printf("\n");
     printf("\n");
 
-    //aplicando o ataque no tabuleiro
-
-    //esta começando do bloco 0 0 do ataque
+    //aplicando o ataque em cone no tabuleiro
     int coordenadaAtaqueConeY = 1;
     int coordenadaAtaqueConeX = 1;
 
@@ -182,6 +180,7 @@ int main(){
         //printf("\n");
     }
 
+    //aplicando o ataque em cruz no tabuleiro
     int coordenadaAtaqueCruzY = 6;
     int coordenadaAtaqueCruzX = 6;
 
@@ -193,6 +192,7 @@ int main(){
         //printf("\n");
     }
 
+    //aplicando o ataque em octaedro no tabuleiro
     int coordenadaAtaqueOctaedroY = 1;
     int coordenadaAtaqueOctaedroX = 6;
 
