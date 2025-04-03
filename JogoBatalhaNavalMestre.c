@@ -16,14 +16,14 @@ int main(){
             tabuleiro[i][j] = 0;
         }
     }
-/*
+
     //colocando os navios no tabuleiro
     //Sumario = (A = 1 ... J = 10)!
 
     //vertical(escolhendo a coordenada começando pela ponta de cima do barco)
 
     // coordenadaPraCimaY nao pode ser 9 ou 10;
-    int coordenadaPraCimaX = 1;
+    int coordenadaPraCimaX = 7;
     int coordenadaPraCimaY = 5;
 
     //verificação de sobreposição de navios e se esta nos limites do tabuleiro
@@ -40,8 +40,8 @@ int main(){
 
     //horizontal(escolhendo a coordenada começando pela ponta do lado esquerda do barco)
     // coordenadaProLadoX nao pode ser 9 ou 10;
-    int coordenadaProLadoX = 5;
-    int coordenadaProLadoY = 3;
+    int coordenadaProLadoX = 7;
+    int coordenadaProLadoY = 2;
 
     //verificação de sobreposição de navios e se esta nos limites do tabuleiro
     if(tabuleiro[coordenadaProLadoY - 1][(coordenadaProLadoX + 0 - 1)] == 3 || tabuleiro[coordenadaProLadoY - 1][(coordenadaProLadoX + 1 - 1)] == 3 || tabuleiro[coordenadaProLadoY - 1][(coordenadaProLadoX + 2 - 1)] == 3){
@@ -59,8 +59,8 @@ int main(){
     //indo para cima direita do barco)
     // coordenadaProDiagonal1X nao pode ser 9 ou 10;
     // coordenadaProDiagonal1Y nao pode ser 2 ou 1;
-    int coordenadaProDiagonal1X = 5;//5
-    int coordenadaProDiagonal1Y = 6;//6
+    int coordenadaProDiagonal1X = 1;//5
+    int coordenadaProDiagonal1Y = 7;//6
 
     //verificação de sobreposição de navios e se esta nos limites do tabuleiro
     if(tabuleiro[coordenadaProDiagonal1Y - 0 - 1][(coordenadaProDiagonal1X + 0 - 1)] == 3 || tabuleiro[coordenadaProDiagonal1Y - 1 - 1][(coordenadaProDiagonal1X + 1 - 1)] == 3 || tabuleiro[coordenadaProDiagonal1Y - 2 - 1][(coordenadaProDiagonal1X + 2 - 1)] == 3){
@@ -78,8 +78,8 @@ int main(){
     //indo para baixo direita do barco)
     // coordenadaProDiagonal1X nao pode ser 9 ou 10;
     // coordenadaProDiagonal1Y nao pode ser 9 ou 10;
-    int coordenadaProDiagonal2X = 8;
-    int coordenadaProDiagonal2Y = 8;
+    int coordenadaProDiagonal2X = 4;
+    int coordenadaProDiagonal2Y = 1;
 
     //verificação de sobreposição de navios e se esta nos limites do tabuleiro
     if(tabuleiro[coordenadaProDiagonal2Y + 0 - 1][(coordenadaProDiagonal2X + 0 - 1)] == 3 || tabuleiro[coordenadaProDiagonal2Y + 1 - 1][(coordenadaProDiagonal2X + 1 - 1)] == 3 || tabuleiro[coordenadaProDiagonal2Y + 2 - 1][(coordenadaProDiagonal2X + 2 - 1)] == 3){
@@ -91,8 +91,7 @@ int main(){
             tabuleiro[coordenadaProDiagonal2Y + j - 1][(coordenadaProDiagonal2X + i - 1)] = navio4[j];
         }
     }
-*/
-    //teste:
+
 
 
     //criando a  matriz do ataque em cone
