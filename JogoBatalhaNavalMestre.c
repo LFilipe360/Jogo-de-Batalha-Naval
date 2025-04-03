@@ -169,27 +169,37 @@ int main(){
     printf("\n");
 
     //aplicando o ataque em cone no tabuleiro
+    //começa da ponta menor
     int coordenadaAtaqueConeY = 1;
-    int coordenadaAtaqueConeX = 1;
+    int coordenadaAtaqueConeX = 3;
 
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            if(ataqueCone[i][j] == 5){
-                tabuleiro[coordenadaAtaqueConeX - 1 + i][coordenadaAtaqueConeY - 1 + j] = ataqueCone[i][j];
+            if((coordenadaAtaqueConeY > 0 && coordenadaAtaqueConeY < 9) && (coordenadaAtaqueConeX > 2 && coordenadaAtaqueConeX < 9)){
+                if(ataqueCone[i][j] == 5){
+                    tabuleiro[coordenadaAtaqueConeY - 1 + i][coordenadaAtaqueConeX - 3 + j] = ataqueCone[i][j];
+                }
+            }else{
+                printf("O ataque em cone está fora do limite do tabuleiro!\n");
             }
+            
             //printf("%d ", ataqueCone[i][j]);
         }
         //printf("\n");
     }
 
     //aplicando o ataque em cruz no tabuleiro
-    int coordenadaAtaqueCruzY = 6;
-    int coordenadaAtaqueCruzX = 6;
-
+    //começa no centro da cruz
+    int coordenadaAtaqueCruzY = 8;
+    int coordenadaAtaqueCruzX = 8; 
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            if (ataqueCruz[i][j] == 5){
-                tabuleiro[coordenadaAtaqueCruzX - 1 + i][coordenadaAtaqueCruzY - 1 + j] = ataqueCruz[i][j];
+            if((coordenadaAtaqueCruzY > 2 && coordenadaAtaqueCruzY < 9) && (coordenadaAtaqueCruzX > 2 && coordenadaAtaqueCruzX < 9)){
+                if (ataqueCruz[i][j] == 5){
+                    tabuleiro[coordenadaAtaqueCruzY - 3 + i][coordenadaAtaqueCruzX - 3 + j] = ataqueCruz[i][j];
+                }
+            }else{
+                printf("O ataque em cruz está fora do limite do tabuleiro!\n");
             }
             
             
@@ -199,14 +209,20 @@ int main(){
     }
 
     //aplicando o ataque em octaedro no tabuleiro
-    int coordenadaAtaqueOctaedroY = 1;
-    int coordenadaAtaqueOctaedroX = 6;
+    //começa no meio do octaedro
+    int coordenadaAtaqueOctaedroY = 8;
+    int coordenadaAtaqueOctaedroX = 3;
 
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            if (ataqueOctaedro[i][j] == 5){
-                tabuleiro[coordenadaAtaqueOctaedroX - 1 + i][coordenadaAtaqueOctaedroY - 1 + j] = ataqueOctaedro[i][j];
+            if((coordenadaAtaqueOctaedroY > 2 && coordenadaAtaqueOctaedroY < 9) && (coordenadaAtaqueOctaedroX > 2 && coordenadaAtaqueOctaedroX < 9)){
+                if (ataqueOctaedro[i][j] == 5){
+                    tabuleiro[coordenadaAtaqueOctaedroY - 3 + i][coordenadaAtaqueOctaedroX - 3 + j] = ataqueOctaedro[i][j];
+                }
+            }else{
+                printf("O ataque em octaedro está fora do limite do tabuleiro!\n");
             }
+            
             
             //printf("%d ", ataqueCone[i][j]);
         }
