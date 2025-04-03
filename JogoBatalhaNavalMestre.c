@@ -174,7 +174,9 @@ int main(){
 
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            tabuleiro[coordenadaAtaqueConeX - 1 + i][coordenadaAtaqueConeY - 1 + j] = ataqueCone[i][j];
+            if(ataqueCone[i][j] == 5){
+                tabuleiro[coordenadaAtaqueConeX - 1 + i][coordenadaAtaqueConeY - 1 + j] = ataqueCone[i][j];
+            }
             //printf("%d ", ataqueCone[i][j]);
         }
         //printf("\n");
@@ -186,7 +188,11 @@ int main(){
 
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            tabuleiro[coordenadaAtaqueCruzX - 1 + i][coordenadaAtaqueCruzY - 1 + j] = ataqueCruz[i][j];
+            if (ataqueCruz[i][j] == 5){
+                tabuleiro[coordenadaAtaqueCruzX - 1 + i][coordenadaAtaqueCruzY - 1 + j] = ataqueCruz[i][j];
+            }
+            
+            
             //printf("%d ", ataqueCone[i][j]);
         }
         //printf("\n");
@@ -198,7 +204,10 @@ int main(){
 
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 5; j++){
-            tabuleiro[coordenadaAtaqueOctaedroX - 1 + i][coordenadaAtaqueOctaedroY - 1 + j] = ataqueOctaedro[i][j];
+            if (ataqueOctaedro[i][j] == 5){
+                tabuleiro[coordenadaAtaqueOctaedroX - 1 + i][coordenadaAtaqueOctaedroY - 1 + j] = ataqueOctaedro[i][j];
+            }
+            
             //printf("%d ", ataqueCone[i][j]);
         }
         //printf("\n");
